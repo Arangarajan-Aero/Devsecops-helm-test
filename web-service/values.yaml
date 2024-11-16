@@ -27,7 +27,7 @@ readinessProbe:
   periodSeconds: 1
   successThreshold: 2
   failureThreshold: 90
-  timeoutSeconds: 3
+  timeoutSeconds: 10
 
 service:
   port: 80
