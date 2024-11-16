@@ -1,0 +1,28 @@
+replicaCount: 1
+image:
+  repository: your-docker-repo/web
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}
+# Uncomment and adjust if you have resource constraints
+# resources:
+#   limits:
+#     cpu: 500m
+#     memory: 512Mi
+#   requests:
+#     cpu: 250m
+#     memory: 256Mi
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+e2eTest:
+  image: your-docker-repo/web
+  tag: latest
+  command: ["npm", "run", "test:e2e"]
