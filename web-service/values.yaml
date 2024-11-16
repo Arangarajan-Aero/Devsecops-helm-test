@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: 905418475780.dkr.ecr.ap-south-1.amazonaws.com/test/api/web
+  repository: 905418475780.dkr.ecr.ap-south-1.amazonaws.com/dev/web
   pullPolicy: IfNotPresent
-  tag: 2-web-M-42e1fa277e21e5e5efd760032b19585672dbbc87
+  tag: 4-web-D-f163cf5880d504b1f6f51389219d8332cbe60fea,
 
 env:
   HOSTNAME: "web-service-host"
