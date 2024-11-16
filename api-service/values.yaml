@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: 905418475780.dkr.ecr.ap-south-1.amazonaws.com/test/api/web
+  repository: 905418475780.dkr.ecr.ap-south-1.amazonaws.com/dev/api
   pullPolicy: IfNotPresent
-  tag: 11-api-M-3956b043a60b9ac5b57a5bce3bf749a9f9d1f105
+  tag: 3-api-D-f163cf5880d504b1f6f51389219d8332cbe60fea
 
 env:
   PGHOSTNAME: db-postgresql
