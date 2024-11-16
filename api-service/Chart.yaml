@@ -1,5 +1,5 @@
 apiVersion: v2
 name: api-service
-description: A Helm chart for deploying an API service with ingress and service.
-version: 0.1.0
+description: A Helm chart for deploying an API service with a LoadBalancer.
+version: 0.2.0
 appVersion: "1.0"
