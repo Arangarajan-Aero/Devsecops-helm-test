@@ -5,6 +5,7 @@ image:
   tag: latest
 
 env:
+  PGHOSTNAME: db-postgresql
   PGDATABASE: postgres
   PGUSER: postgres
   PGPASSWORD: postgres
