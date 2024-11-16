@@ -5,7 +5,7 @@ image:
   tag: latest
 
 env:
-  HOSTNAME: "web.${providers.ephemeral-kubernetes.outputs.default-hostname}"
+  HOSTNAME: "web-service-host"
   VUE_APP_USERNAME: ${local.username}
 
 resources:
@@ -29,12 +29,7 @@ readinessProbe:
   failureThreshold: 90
   timeoutSeconds: 3
 
-ingress:
-  enabled: true
-  className: nginx
-  host: "web.${providers.ephemeral-kubernetes.outputs.default-hostname}"
-
 service:
   port: 80
   targetPort: 8080
-  type: ClusterIP
+  type: LoadBalancer
