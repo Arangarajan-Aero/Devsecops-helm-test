@@ -22,6 +22,8 @@ spec:
         - python
         - app.py
         env:
+        - name: PGHOSTNAME
+          value: {{ .Values.env.PGHOSTNAME }}
         - name: PGDATABASE
           value: {{ .Values.env.PGDATABASE }}
         - name: PGUSER
