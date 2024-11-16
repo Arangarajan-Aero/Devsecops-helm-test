@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
-  repository: ${actions.build.api.outputs.deploymentImageId}
+  repository: 905418475780.dkr.ecr.ap-south-1.amazonaws.com/test/api/web
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: 11-api-M-3956b043a60b9ac5b57a5bce3bf749a9f9d1f105
 
 env:
   PGHOSTNAME: postgres
