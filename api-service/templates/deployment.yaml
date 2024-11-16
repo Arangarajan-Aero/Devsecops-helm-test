@@ -29,10 +29,7 @@ spec:
         - name: PGUSER
           value: {{ .Values.env.PGUSER }}
         - name: PGPASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: db-postgresql
-              key: postgres-password
+          value: {{ .Values.env.PGPASSWORD }}
         ports:
         - containerPort: 8080
           name: http
