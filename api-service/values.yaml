@@ -5,7 +5,7 @@ image:
   tag: 11-api-M-3956b043a60b9ac5b57a5bce3bf749a9f9d1f105
 
 env:
-  PGHOSTNAME: postgres
+  PGHOSTNAME: db-postgresql
   PGDATABASE: postgres
   PGUSER: postgres
   PGPASSWORD: postgres
