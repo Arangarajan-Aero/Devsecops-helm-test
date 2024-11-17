@@ -4,7 +4,7 @@ helm:
     value: 905418475780.dkr.ecr.ap-south-1.amazonaws.com/prod/api
     forcestring: false
   - name: image.tag
-    value: 5-api-M-77bcabb98d1bb0549602596edd426066234bfa86
+    value: 6-api-M-b97e16d4f7ae44a373654e6f3fa6e7cb3a37189b
     forcestring: true
   - name: replicaCount
     value: "1"
