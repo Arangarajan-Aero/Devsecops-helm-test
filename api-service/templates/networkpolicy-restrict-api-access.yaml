@@ -14,7 +14,7 @@ spec:
           app: web
     - podSelector:
         matchLabels:
-          app: database
+          app: data-db-postgresql-0
   policyTypes:
   - Ingress
   egress:
