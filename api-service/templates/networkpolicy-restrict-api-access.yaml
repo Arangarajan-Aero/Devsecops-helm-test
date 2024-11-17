@@ -14,14 +14,14 @@ spec:
           app: web
     - podSelector:
         matchLabels:
-          app: database
+          app: db
   policyTypes:
   - Ingress
   egress:
   - to:
     - podSelector:
         matchLabels:
-          app: database
+          app: db
     - podSelector:
         matchLabels:
           app: web
