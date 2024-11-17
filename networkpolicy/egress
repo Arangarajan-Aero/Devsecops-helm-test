@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: restrict-api-communication
+  namespace: dev
+spec:
+  podSelector:
+    matchLabels:
+      app: api  
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: web  
+    - podSelector:
+        matchLabels:
+          app: database  
+  policyTypes:
+  - Egress
