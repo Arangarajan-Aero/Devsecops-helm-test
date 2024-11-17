@@ -8,7 +8,7 @@ env:
   PGHOSTNAME: db-postgresql
   PGDATABASE: postgres
   PGUSER: postgres
-  PGPASSWORD: aLYCJK9bRH
+  PGPASSWORD: NHTwXvjt2G
 
 resources:
   limits:
