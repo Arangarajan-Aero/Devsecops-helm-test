@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: restrict-api-access
+  namespace: dev
+spec:
+  podSelector:
+    matchLabels:
+      app: api
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: web
+    - podSelector:
+        matchLabels:
+          app: database
+  policyTypes:
+  - Ingress
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: database
+    - podSelector:
+        matchLabels:
+          app: web
+  policyTypes:
+  - Egress
