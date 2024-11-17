@@ -4,7 +4,7 @@ helm:
     value: 905418475780.dkr.ecr.ap-south-1.amazonaws.com/prod/web
     forcestring: false
   - name: image.tag
-    value: 16-web-M-77bcabb98d1bb0549602596edd426066234bfa86
+    value: 17-web-M-c41e47a3b429b780e9d7180234ea1d03802b0156
     forcestring: true
   - name: replicaCount
     value: "1"
